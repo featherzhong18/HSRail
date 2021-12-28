@@ -1,6 +1,7 @@
 #pragma once
 #include "Common.h"
 
+#define INFINITY INT_MAX
 #define VISITED 1
 #define UNVISITED 0
 
@@ -13,3 +14,4 @@ typedef struct Map {
 } Map;
 
 int LocateVex(Map M, String places);
+Status InitMap(Map& M, String* places, int n);
