@@ -1,5 +1,5 @@
 #include "Map.h"
-
+//Óð·áÅ£±Æ
 int LocateVex(Map M, String p)
 {//ss
 	int i;
