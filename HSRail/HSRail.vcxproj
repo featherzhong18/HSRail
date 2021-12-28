@@ -144,6 +144,7 @@
     <ClInclude Include="Order.h" />
     <ClInclude Include="Rail.h" />
     <ClInclude Include="Route.h" />
+    <ClInclude Include="Ticket.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
