@@ -11,3 +11,5 @@ typedef struct Map {
     int wayNum;         // 道路数
     int* tags;          // 用于遍历时的标记
 } Map;
+
+int LocateVex(Map M, String places);
