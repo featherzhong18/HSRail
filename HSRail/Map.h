@@ -13,5 +13,5 @@ typedef struct Map {
     int* tags;          // 用于遍历时的标记
 } Map;
 
-int LocateVex(Map M, String places);
+int LocatePlaces(Map M, String places);
 Status InitMap(Map& M, String* places, int n);
