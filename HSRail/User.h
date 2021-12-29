@@ -9,7 +9,9 @@ typedef struct User {
     int money;         // 剩余钱数（非必要）
     int allTickets;    // 总共的订单数
     int nowTickets;    // 现在的订单数
-    Order* oder;     // 用户的订单链表
-    Status isFree;     // 用于判断客户是否空闲
+    Order* order;     // 用户的订单链表
+    //Status isFree;     // 用于判断客户是否空闲
     struct User* next;
-} User, * UserNode;
+} UserNode, * UserList;
+
+Status InitUserList(UserList& U);//初始化用户链表

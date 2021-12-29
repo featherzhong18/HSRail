@@ -9,4 +9,4 @@ typedef struct Rail {
     int allTicketNum;  // 总票数
     int nowTicketNum;  // 现存的票数
     struct Rail* next;
-} Rail, * RailNode;
+} RailNode, *RailList;
