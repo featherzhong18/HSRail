@@ -13,5 +13,10 @@ typedef struct Map {
     int* tags;          // 用于遍历时的标记
 } Map;
 
+typedef struct {
+    String v, w;
+    int length;
+} WayInfo;
+
 int LocatePlaces(Map M, String places);
 Status InitMap(Map& M, String* places, int n);

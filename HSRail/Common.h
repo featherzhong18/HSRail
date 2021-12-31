@@ -11,4 +11,4 @@
 #define OVERFLOW -1
 
 typedef int Status;
-typedef char String[20];
+typedef char String[18];

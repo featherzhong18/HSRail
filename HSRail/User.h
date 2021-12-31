@@ -4,12 +4,14 @@
 
 typedef struct User {
     String name;     // 姓名
-    char id[18];       // 身份证号
-    char password[20]; // 密码
+    String id;       // 身份证号
+    String password; // 密码
+    //char id[18];       // 身份证号
+    //char password[20]; // 密码
     int money;         // 剩余钱数（非必要）
     int allTickets;    // 总共的订单数
     int nowTickets;    // 现在的订单数
     Order *order;     // 用户的订单链表
-    Status isFree;     // 用于判断客户是否空闲
+    //Status isFree;     // 用于判断客户是否空闲
     struct User* next;
 } User, * UserNode;
