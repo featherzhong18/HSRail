@@ -12,4 +12,10 @@
 
 typedef int Status;
 typedef char String[18];
+
+typedef struct {
+	int day;
+	int hour;
+}Date;//日期
+
 //羽丰牛逼！
