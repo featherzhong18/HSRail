@@ -13,6 +13,7 @@ typedef struct Rail {
 
 Status InitRailList(RailList &R);//初始化车次链表
 RailNode* MakeRailNode(int id, Route route, String date, int num);//创建车次结点
-Status InsertRailNode(RailNode* p, RailNode* q);//插入车次结点
-Status DeleteRailNode(RailNode* p, int& id);//删除车次结点
+Status InsertRailNode(RailList& R, RailNode* p);//插入车次结点
+Status DeleteRailNode(RailList& R, int id);//删除车次
+Status AddRailNode(RailList& R, int id, Route route, String date, int num);//增加车次
 Status CreateRailList(RailList& R, int n, int* id, Route* route, String* date, int* num);//创建车次链表

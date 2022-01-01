@@ -20,32 +20,43 @@ RailNode* MakeRailNode(int id, Route route, String date, int num) {//´´½¨³µ´Î½áµ
 	return p;
 }
 
-Status InsertRailNode(RailNode* p, RailNode* q) {//²åÈë³µ´Î½áµã
-	if (NULL == p || NULL == q) return ERROR;
-	q->next = p->next;
-	p->next = q;
+Status InsertRailNode(RailList& R, RailNode* p) {//²åÈë³µ´Î½áµã
+	if (NULL == p) return ERROR;
+	p->next = R->next;
+	R->next = p;
 	return OK;
 }
 
-Status DeleteRailNode(RailNode* p, int& id) {//É¾³ý³µ´Î½áµã
-	RailNode* q;
-	if (NULL == p || NULL == p->next) return ERROR;
-	q = p->next;
-	p->next = q->next;
-	id = q->id;
-	free(q);
+Status DeleteRailNode(RailList& R, int id) {//É¾³ý³µ´Î
+	RailNode* p, * q;
+	p = R->next;
+	q = R;
+	while (NULL != p) {
+		if (p->id == id) break;
+		q = p;
+		p = p->next;
+	}
+	if (NULL == p) return ERROR;
+	q->next = p->next;
+	free(p);
+	return OK;
+}
+
+Status AddRailNode(RailList& R, int id, Route route, String date, int num) {//Ôö¼Ó³µ´Î
+	RailNode* p;
+	if (NULL == (p = MakeRailNode(id, route, date, num))) return ERROR;
+	if (OK != InsertRailNode(R, p)) return ERROR;
 	return OK;
 }
 
 Status CreateRailList(RailList& R, int n, int* id, Route* route, String* date, int* num) {//´´½¨³µ´ÎÁ´±í
-	RailNode* p, * q;
+	RailNode* p;
 	int i;
 	if (OVERFLOW == InitRailList(R)) return OVERFLOW;
-	p = R;
 	for (i = 0; i < n; i++) {
-		q = MakeRailNode(id[i], route[i], date[i], num[i]);
-		InsertRailNode(p, q);
-		p = q;
+		if(NULL==(p = MakeRailNode(id[i], route[i], date[i], num[i]))) return ERROR;
+		InsertRailNode(R,p);
 	}
 	return OK;
 }
+
