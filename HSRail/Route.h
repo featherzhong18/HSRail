@@ -2,8 +2,8 @@
 #include "Common.h"
 
 typedef struct Route {
-    String* places;   // è·¯çº¿ä¸­çš„æ‰€æœ‰åœ°ç‚¹
-    int* length;         // è¯¥è·¯çº¿çš„é•¿åº¦
-    int* price;           // è´¹ç”¨
-    float* time;         // ç”¨æ—¶
+    String* places;   // Â·ÏßÖÐµÄËùÓÐµØµã
+    int* length;         // ¸ÃÂ·ÏßµÄ³¤¶È
+    int* price;           // ·ÑÓÃ
+    float* time;         // ÓÃÊ±
 } Route;

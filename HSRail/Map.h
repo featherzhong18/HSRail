@@ -1,7 +1,7 @@
 #pragma once
 #include "Common.h"
 
-#define INFINITY 100/*INT_MAX*/
+#define INFINITY INT_MAX
 #define VISITED 1
 #define UNVISITED 0
 
