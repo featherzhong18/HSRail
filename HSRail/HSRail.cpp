@@ -5,7 +5,5 @@
 #include "User.h"
 
 int main() {
-	String str;
-	gets_s(str,sizeof(String));
-	printf("%s", str);
+	
 }
