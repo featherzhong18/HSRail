@@ -2,10 +2,15 @@
 #include "Common.h"
 
 typedef struct {
-	int id; //³µ´ÎºÅ
-	String start;//Æğµã
-	String end;//ÖÕµã
-	String starttime;//·¢³µÊ±¼ä
-	String endtime;//µ½Õ¾Ê±¼ä
-	int price;//Æ±¼Û
-}TicketInfo;//³µÆ±ĞÅÏ¢
+	int day;
+	int hour;
+}Date;//æ—¥æœŸ
+
+typedef struct {
+	int id; //è½¦æ¬¡å·
+	String start;//èµ·ç‚¹
+	String end;//ç»ˆç‚¹
+	Date starttime;//å‘è½¦æ—¶é—´
+	Date endtime;//åˆ°ç«™æ—¶é—´
+	int price;//ç¥¨ä»·
+}TicketInfo;//è½¦ç¥¨ä¿¡æ¯
