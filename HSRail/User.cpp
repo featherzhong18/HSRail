@@ -7,3 +7,4 @@ Status InitUserList(UserList& U) {//初始化用户链表
 	U->next = NULL;
 	return OK;
 }
+

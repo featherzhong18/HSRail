@@ -9,6 +9,3 @@ typedef struct {
 	String endtime;//到站时间
 	int price;//票价
 }TicketInfo;//车票信息
-
-typedef struct Ticket {
-}Ticket;
