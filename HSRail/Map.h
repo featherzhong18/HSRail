@@ -5,11 +5,6 @@
 #define VISITED 1
 #define UNVISITED 0
 
-typedef struct {
-    String v, w;
-    int info;
-}WayInfo;//道路信息
-
 typedef struct Map {
     String* places;     // 站点
     int** ways;         // 道路，其中的权值为路程的长度
