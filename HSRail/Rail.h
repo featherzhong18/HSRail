@@ -3,17 +3,17 @@
 #include "Route.h"
 
 typedef struct Rail {
-    int id;            // ³µ´ÎºÅ
-    Route route;       // Â·Ïß£¨×Ü£©
-    String date;        // ³µ´ÎÈÕÆÚ¼°Ê±¼ä
-    int allTicketNum;  // ×ÜÆ±Êı
-    int nowTicketNum;  // ÏÖ´æµÄÆ±Êı
+    int id;            // è½¦æ¬¡å·
+    Route route;       // è·¯çº¿ï¼ˆæ€»ï¼‰
+    Date date;        // è½¦æ¬¡æ—¥æœŸåŠæ—¶é—´
+    int allTicketNum;  // æ€»ç¥¨æ•°
+    int nowTicketNum;  // ç°å­˜çš„ç¥¨æ•°
     struct Rail* next;
 } RailNode, *RailList;
 
-Status InitRailList(RailList &R);//³õÊ¼»¯³µ´ÎÁ´±í
-RailNode* MakeRailNode(int id, Route route, String date, int num);//´´½¨³µ´Î½áµã
-Status InsertRailNode(RailList& R, RailNode* p);//²åÈë³µ´Î½áµã
-Status DeleteRailNode(RailList& R, int id);//É¾³ı³µ´Î
-Status AddRailNode(RailList& R, int id, Route route, String date, int num);//Ôö¼Ó³µ´Î
-Status CreateRailList(RailList& R, int n, int* id, Route* route, String* date, int* num);//´´½¨³µ´ÎÁ´±í
+Status InitRailList(RailList &R);//åˆå§‹åŒ–è½¦æ¬¡é“¾è¡¨
+RailNode* MakeRailNode(int id, Route route, String date, int num);//åˆ›å»ºè½¦æ¬¡ç»“ç‚¹
+Status InsertRailNode(RailList& R, RailNode* p);//æ’å…¥è½¦æ¬¡ç»“ç‚¹
+Status DeleteRailNode(RailList& R, int id);//åˆ é™¤è½¦æ¬¡
+Status AddRailNode(RailList& R, int id, Route route, String date, int num);//å¢åŠ è½¦æ¬¡
+Status CreateRailList(RailList& R, int n, int* id, Route* route, String* date, int* num);//åˆ›å»ºè½¦æ¬¡é“¾è¡¨
