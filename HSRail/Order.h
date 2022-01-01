@@ -12,4 +12,6 @@ typedef struct Order {
     char* date;        // 买票日期
     int condition;     // 票的状态（有效和无效）
     struct Order* next;
-} Order, * OrderNode;
+} OrderNode, * OrderList;
+
+Status InitOrderList(OrderList& O);//初始化订单链表
