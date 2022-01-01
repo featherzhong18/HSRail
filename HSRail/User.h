@@ -11,7 +11,13 @@ typedef struct User {
     int money;         // 剩余钱数（非必要）
     int allTickets;    // 总共的订单数
     int nowTickets;    // 现在的订单数
+<<<<<<< HEAD
     Order *order;     // 用户的订单链表
+=======
+    Order* order;     // 用户的订单链表
+>>>>>>> 90471926657ce6bfa739bf557e9cb626d79ce394
     //Status isFree;     // 用于判断客户是否空闲
     struct User* next;
-} User, * UserNode;
+} UserNode, * UserList;
+
+Status InitUserList(UserList& U);//初始化用户链表
