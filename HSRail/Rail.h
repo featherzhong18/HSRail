@@ -10,3 +10,6 @@ typedef struct Rail {
     int nowTicketNum;  // ÏÖ´æµÄÆ±Êı
     struct Rail* next;
 } RailNode, *RailList;
+
+Status InitRailList(RailList &R);
+RailNode* MakeRailNode(int id, Route route, String date, int num);

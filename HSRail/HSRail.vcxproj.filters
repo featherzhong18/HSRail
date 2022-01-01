@@ -50,5 +50,8 @@
     <ClCompile Include="Order.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Rail.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
