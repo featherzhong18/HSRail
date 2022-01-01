@@ -17,8 +17,6 @@ Status InitMap(Map& M, String* places, int n) {
 	if (0 == n) return OK; // 空地图
 	if (NULL == (M.places = (String*)malloc(n * sizeof(String))))
 		return OVERFLOW;
-	//for (i = 0; i < M.placeNum; i++) /*M.places[i] = places[i];*/  // 记得更改。。。。
-	//	strcpy(M.places[i], places[i]);
 	for (i = 0; i < M.placeNum; i++) strcpy_s(M.places[i], places[i]);//改了
 	if (NULL == (M.ways = (int**)malloc(n * sizeof(int*))))
 		return OVERFLOW;
