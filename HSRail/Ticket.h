@@ -2,11 +2,6 @@
 #include "Common.h"
 
 typedef struct {
-	int day;
-	int hour;
-}Date;//日期
-
-typedef struct {
 	int id; //车次号
 	String start;//起点
 	String end;//终点
