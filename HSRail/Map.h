@@ -1,7 +1,7 @@
 #pragma once
 #include "Common.h"
 
-#define INFINITY INT_MAX
+#define INFINITY 100/*INT_MAX*/
 #define VISITED 1
 #define UNVISITED 0
 
@@ -21,3 +21,4 @@ typedef struct {
 int LocatePlaces(Map M, String places);
 Status InitMap(Map& M, String* places, int n);
 Status CreateMap(Map& G, String* places, int n, WayInfo* ways, int e);//´´½¨µØÍ¼
+Status AddWay(Map& M, int k, int m, int length);

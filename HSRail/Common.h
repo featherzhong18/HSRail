@@ -15,7 +15,7 @@ typedef char String[18];
 
 typedef struct {
 	int day;
-	int hour;
+	float hour;
 }Date;//日期
 
 //羽丰牛逼！
