@@ -5,5 +5,8 @@
 #include "User.h"
 
 int main() {
+	/*scanf_s("%s", s, sizeof(String));
+	gets_s(s, sizeof(String));*/
+	return 0;
 	printf("sss");
 }
