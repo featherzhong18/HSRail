@@ -5,5 +5,5 @@
 #include "User.h"
 
 int main() {
-	
+	printf("sss");
 }
