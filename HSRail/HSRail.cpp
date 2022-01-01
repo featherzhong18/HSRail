@@ -5,8 +5,18 @@
 #include "User.h"
 
 int main() {
-	/*scanf_s("%s", s, sizeof(String));
-	gets_s(s, sizeof(String));*/
-	return 0;
-	printf("sss");
+	char a, b;
+	printf("input a:");
+	scanf_s("%c", &a, 2);
+	while (getchar() != '\n') {
+		while (getchar() != '\n') {
+			getchar();
+		}
+		printf("«Î÷ÿ–¬ ‰»Î£∫");
+		scanf_s("%c", &a, 2);
+	}
+	printf("%c\n", a);
+	printf("input b:");
+	scanf_s("%c", &b, 2);
+	printf("%c\n", b);
 }
