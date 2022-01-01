@@ -6,12 +6,12 @@
 #define invalid 0
 
 typedef struct Order {
-    int orderid;        // ¶©µ¥ºÅ
-    String userid;     // ³Ë³µÈË
-    TicketInfo ticket; //³µÆ±ĞÅÏ¢
-    char* date;        // ÂòÆ±ÈÕÆÚ
-    int condition;     // Æ±µÄ×´Ì¬£¨ÓĞĞ§ºÍÎŞĞ§£©
+    int orderid;        // è®¢å•å·
+    String userid;     // ä¹˜è½¦äºº
+    TicketInfo ticket; //è½¦ç¥¨ä¿¡æ¯
+    Date date;        // ä¹°ç¥¨æ—¥æœŸ
+    int condition;     // ç¥¨çš„çŠ¶æ€ï¼ˆæœ‰æ•ˆå’Œæ— æ•ˆï¼‰
     struct Order* next;
 } OrderNode, * OrderList;
 
-Status InitOrderList(OrderList& O);//³õÊ¼»¯¶©µ¥Á´±í
+Status InitOrderList(OrderList& O);//åˆå§‹åŒ–è®¢å•é“¾è¡¨
